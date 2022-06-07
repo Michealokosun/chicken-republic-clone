@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Nunito:ital,wght@0,700;0,800;1,300;1,700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+header{
+
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)),  url("../images/ChickenRepublic_HomePageBanner.jpg") no-repeat  center  center ;
+   width: 100%;
+    height: 70vh;
+    background-size:cover;
+    position: relative;
+
+
+}
+
+/* ----------loader gif */
+
+
+.pre-loader{
+
+    background: #fff url("../images/loader.gif") no-repeat center center; 
+     background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    
+}
+/* ----------loader gif */
+
+/* -------------------------------pop up styles--------------- */
+.pop-up{
+    background: linear-gradient(to bottom right, rgba(27, 25, 25, 0.882), rgb(26, 22, 22) );
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 300;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s ease-in-out;
+    visibility: hidden;
+}
+
+.pop-up .pop-content{
+    border: 8px solid yellow;
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.pop-up .pop-content p{
+    text-align: center;
+    margin: 6px 0px;
+    padding-bottom: 10px;
+}
+
+
+.pop-up .pop-content button{
+    background-color: yellow;
+    border: none;
+    padding: 3px 10px;
+    font-family: 'Nunito', sans-serif;
+    color: red;
+    
+}
+/* -------------------------------pop up styles--------------- */
+
+.fixed{
+    position: fixed;
+    padding: 5px 8px;
+    right: -2%;
+    z-index: 1;
+    background-color: red;
+    color: white;
+    opacity: 0.9;
+    top: 40%;
+    transform: rotateZ(269deg
+    );
+}
+
+/* nav styles */
+
+nav{
+    background-color: rgba(0,0,0,0.2);
+  
+}
+
+nav .container {
+    display: flex;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container .logo{
+    background-color: red;
+}
+
+nav .container .logo  img{
+    width: 110px;
+    
+}
+
+
+
+/* list styles */
+
+
+.nav-content {
+    margin: auto;
+}
+
+.nav-content ul{
+    display: flex;
+}
+.nav-content ul li{
+    list-style-type: none;
+    padding: 1px 10px
+}
+
+
+
+.nav-content ul li a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-content ul li a:hover{
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+}
+
+
+
+
+/* main styles */
+
+main h1{
+    margin-left: 180px;
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    line-height: 56px;
+
+}
+
+#chicken{
+    border-bottom: 4px solid red;
+}
+/* end */
+
+.other{
+   width: 20%;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
+}
+
+.other img{
+    width: 80%;
+    padding: 10px;
+
+}
+
+
+.other .text p{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+    
+}
+.other .text p strong{
+    color: yellow;
+
+    
+}
+.other .text1{
+    background-color: yellow;
+    grid-column: 1/span 2;
+    text-align: center;
+}
+
+
+.other .text1 p{
+    color: red;
+    font-weight: 600;
+    display: inline;
+
+}
+
+
+nav .container button {
+    display: none;
+}
+
+
+/* section 1 styles */
+
+#order-now{
+    background-color: red;
+    padding-bottom: 8px;
+}
+
+section .container .item-text  {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+section .container .item-text span {
+    background-color: yellow;
+    padding: 3px 7px;
+    color: red;
+    font-family: 'Nunito', sans-serif;
+    font-weight:  700;
+
+    font-size: 20px;
+    border-radius: 18px;
+}
+
+
+section .container .item-text span:hover{
+    background-color: white;
+    cursor: pointer;
+}
+section .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+section .container .items{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    overflow-x: hidden;
+
+}
+
+section .container .items img{
+    width: 65px;
+}
+section .container .items .item1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 9px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+
+section .container .items .item1:hover{
+    color: yellow;
+}
+
+
+
+/* banner style */
+
+
+.banner{
+    padding: 90px;
+    background-color: red;
+
+}
+
+
+.banner .text-banner h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+
+.banner-underline{
+    border-bottom: 5px solid white;
+   
+}
+
+
+/* news style */
+
+.news .news-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+.news .news-slider .news-slide{
+    display: flex;
+    overflow-x: scroll;
+    column-gap: 25px;
+}
+
+.news .news-text h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+
+/* ------------our people=----------------------- */
+
+
+.people{
+    padding: 77px;
+}
+
+.people .people-text{
+    padding: 20px;
+}
+
+
+.people h2{
+    color: red;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+
+.people p{
+    font-family: 'Flamenco', cursive;
+    font-size: 20px;
+    font-weight: 300;
+  
+   
+
+}
+
+
+/* -----------------footer styles---------------- */
+
+.foot{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot p{
+    margin: 10px 20px 10px 30px;
+    color: white;
+    font-family: cursive ;
+    font-size: 18px;
+}
+
+
+.foot p:hover{
+    color: yellow;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------menu stules=------------------------------ */
+.menu-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.menu-section img{
+    margin-top: 40px;
+    width: 30%;
+}
+.menu-section p{
+    color: red;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    
+}
+
+
+/* ---------------------------------------------------------------------------------menu stules=------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+/* small phones */
+
+@media only screen and (max-width:400px) {
+
+    header{
+        background-size: cover;
+        height: 34vh;
+    }
+/* nav styles */
+    
+nav{
+    background-color: red;
+    position:  relative;
+  
+}
+.other{
+        display: none;
+    }
+
+    nav .container {
+        justify-content: space-between;
+    }
+
+ nav .nav-content{
+        visibility: hidden;
+        /* transform: translateX(400px); */
+        position: fixed;
+        transition: all .3s ease-in-out;
+        background-image: linear-gradient(0deg, rgb(223, 25, 25), rgb(240, 240, 32));
+        min-height: 100vh;
+        width: 90%;
+        z-index: 20;
+        top: 0%;
+        right: 0;
+    }
+
+    nav .open{
+        visibility: visible;
+        
+    }
+
+    nav .nav-content .close-btn p{
+        font-size: 4rem;
+        padding: 20px;
+        color: white;
+        border-radius: 2%;
+        text-shadow: 2px 2px 2px  black;
+        display: inline;
+    }
+
+    nav .nav-content ul{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+
+    }
+
+    nav .nav-content ul li{
+        padding: 10px 20px;
+
+    }
+
+
+    nav .nav-content ul li a{
+        color: rgb(254, 252, 252);
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+    }
+
+
+    nav .container .logo  img{
+        width: 56px;
+        
+    }
+
+/* main styles */
+    main h1{
+        margin-left: 10px;
+        margin-top: 30px;
+        font-size: 50;
+        line-height: 39px;
+    
+    }
+
+    /* navigation styles */
+    nav .container button{
+        border: none;
+        display: block;
+        background: none;
+        cursor: pointer;
+    }
+
+    nav .container button > div {
+        padding: 2px 15px;
+        border: 1px solid yellow;
+        margin-top: 5px;
+        
+       
+    }
+    section .container .items img{
+        width: 53px;
+    }
+
+
+
+   
+
+    .fixed{
+        right: -5%;
+        top: 18%;
+    }
+
+
+    .banner{
+        padding: 10px;
+    }
+
+
+    .banner .text-banner h2{
+      font-size: 1em;
+    }
+
+    .people {
+        padding: 21px;
+    }
+
+    .foot p{
+        font-size: 12px;
+    }
+  
+    .menu-section img{
+        width: 84%;
+    }
+
+   
+
+}
+
+/* end of small phone */
+
+
+/* medium phones */
+
+@media (min-width:401px) and (max-width:769px){
+    header{
+        background-size: cover;
+        height: 34vh;
+    }
+
+    nav{
+        background-color: red;
+      
+    }
+    .other{
+            display: none;
+        }
+
+        .fixed{
+            display: none;
+        }
+
+
+        nav .container {
+            justify-content: space-between;
+        }
+    
+        nav .nav-content{
+            /* display: none; */
+            transform: translateX(900px);
+            position: fixed;
+            transition: all .3s ease-in-out;
+            background-image: linear-gradient(0deg, rgb(223, 25, 25), rgb(240, 240, 32));
+            min-height: 100vh;
+            width: 90%;
+            z-index: 20;
+            top: 0%;
+            right: 0;
+        }
+    
+        nav .open{
+            transform: translateX(0px);
+            
+        }
+    
+        nav .nav-content .close-btn p{
+            font-size: 4rem;
+            padding: 20px;
+            color: white;
+            border-radius: 2%;
+            text-shadow: 2px 2px 2px  black;
+            display: inline;
+        }
+    
+        nav .nav-content ul{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+    
+        }
+    
+        nav .nav-content ul li{
+            padding: 10px 20px;
+    
+        }
+    
+    
+        nav .nav-content ul li a{
+            color: rgb(254, 252, 252);
+            font-family: 'Nunito', sans-serif;
+            font-size: 25px;
+        }
+    
+    
+    
+        nav .container .logo  img{
+            width: 56px;
+            
+        }
+
+
+
+        main h1{
+            margin-left: 10px;
+            margin-top: 30px;
+            font-size: 50;
+        line-height: 39px;
+
+        
+        }
+    
+        /* navigation styles */
+        nav .container button{
+            border: none;
+            display: block;
+            background: none;
+            cursor: pointer;
+        }
+    
+        nav .container button > div {
+            padding: 2px 15px;
+            border: 1px solid yellow;
+            margin-top: 5px;
+            
+           
+        }
+
+        section .container .items img{
+            width: 63px;
+        }
+
+        .fixed{
+            right: -5%;
+            top: 18%;
+        }
+
+
+        .banner{
+            padding: 10px;
+        }
+    
+
+        .banner .text-banner h2{
+            font-size: 1em;
+          }
+      
+          
+          .people {
+            padding: 21px;
+        }
+
+        .foot p{
+            font-size: 12px;
+        }
+
+        .pre-loader{
+            width: 100%;
+        }
+
+        .menu-section img{
+            width: 94%;
+        }
+
+        
+
+        
+
+}
+
+
+
+
+
+
